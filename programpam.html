@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+	
+        body
+        {
+        
+            background-color: #FFFACD;
+        }
+        table,td
+        {
+            text-align: center;
+            border: 1px #BDB76B;
+        }
+    </style>
+</head>
+<body>
+
+<center>
+<table id="Tabelka" style="align: center;">
+
+
+  <tr>
+    <td>Tablica</td>
+    <td>Kuba</td>
+  </tr>
+
+
+</table>
+<br>
+<button type="button" onclick="klik()">Dodaj </button>
+
+<script>
+function klik() {
+ 
+  var tabela = document.getElementById("Tabelka");
+  for (i=0; i<=11; i++)
+  {
+  var row = tabela.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);    
+
+  var numer = (0,i);
+
+ 
+  cell1.innerHTML = "11*"+i+"="+( numer*11);
+  cell2.innerHTML = "Ok";
+  }
+
+}
+</script>
+</center>
+</body>
+</html>
